@@ -2,16 +2,13 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-        "mix": "mix",
-        "watch": "mix watch"
+        "build": "vite build"
     },
     "devDependencies": {
         "axios": "^1.1.2",
         "laravel-vite-plugin": "^0.6.0",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
-        "vite": "^3.0.0",
-        "laravel-mix": "^6.0.49"
+        "vite": "^3.0.0"
     }
 }
