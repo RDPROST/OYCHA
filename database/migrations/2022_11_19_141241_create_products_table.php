@@ -18,15 +18,16 @@ return new class extends Migration
             $table->string("name");
             $table->text("description");
             $table->float("price");
-            $table->float("sell_percent");
+            $table->float("sell_percent")->default(0)->nullable();
             $table->string("slug");
             $table->integer("year");
             $table->string("made_in");
             $table->tinyInteger("status")->default('0')->comment('1=hidden,0=visible');
-            $table->mediumText("meta_title");
-            $table->mediumText("meta_keywords");
-            $table->mediumText("meta_description");
+            $table->mediumText("meta_title")->nullable();
+            $table->mediumText("meta_keywords")->nullable();
+            $table->mediumText("meta_description")->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
+            $table->unsignedBigInteger('image_id')->nullable();
 
             $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();

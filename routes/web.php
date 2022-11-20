@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function() {
     return view('welcome');
 });
+
+Route::group(['middleware' => 'role:admin'], function() {
+    Route::get('/test', function() {
+        return 'Добро пожаловать, Веб-разработчик';
+    });
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
