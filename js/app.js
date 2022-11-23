@@ -17,3 +17,7 @@ document.querySelector('.header__menu-icon').addEventListener('click', (showDiv)
         myDiv = true;
     }
 })
+
+document.querySelector('.header__login').addEventListener('click',() => {
+    location.href = "Authorization.html";
+})
