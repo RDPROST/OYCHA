@@ -10,6 +10,7 @@
     --gray-5: #F9F9F9;
     --gray-7: #FBFBFB;
     --gray-8: #E3E3E3;
+    --gray-9: #646464;
     --links: #0D74E3;
     --green: #43BE50;
     --fresh: #F2F6FF;
@@ -437,7 +438,7 @@ body {
 .block-running-line {
   overflow: hidden;
   display: flex;
-  
+  margin: 10px 0 10px 0;
 }
 
 .running-line {
@@ -678,6 +679,7 @@ a.header__nav-item svg {
   gap: 40px;
 }
 
+/* FOOTER */
 
 footer {
   background-color: #000000;
@@ -812,6 +814,8 @@ button:hover {
   align-items: baseline;
 }
 
+/* FAQ */
+
 .section__static{
   max-width: 934px;
   margin: 0 auto;
@@ -924,6 +928,154 @@ button:hover {
     flex-direction: column;
   }
 }
+
+
+/* Contacts */
+
+.contacts{
+  max-width: none;
+}
+
+.contacts__info{
+  text-align: center;
+}
+
+.contact__item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.contact__title__info{
+  margin: 12px 0 12px 0;
+  opacity: 0.5;
+}
+
+.contact__subtitle__link{
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.map_zone{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.map{
+  margin-bottom: 120px;
+}
+
+/* Subscription */
+.subscription {
+  border-top: 1px solid var(--gray-3);
+  border-bottom: 1px solid var(--gray-3);
+  margin-bottom: 56px;
+  justify-content: center;
+  gap: 120px;
+  display: flex;
+  align-items: center;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+.subscription h1 {
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 116%;
+  text-transform: capitalize;
+}
+
+.subscription__title {
+  max-width: 30%;
+}
+
+.subscription__caption-input {
+  position: relative;
+}
+
+input {
+  height: 72px;
+  background: var(--gray-5);
+  border: 1px solid var(--gray-3);
+  border-radius: 36px;
+  padding: 14px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 24px;
+}
+
+.subscription__caption-btn {
+  height: 70px;
+  color: var(--black);
+  border-radius: 36px;
+  text-transform: uppercase;
+  padding: 7px 24px;
+  border: none;
+  font-weight: 600;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.subscription__caption-btn p {
+  position: relative;
+  z-index: 99;
+}
+.subscription__caption-btn:hover {
+  box-shadow: 0px 4px 9px rgba(154, 154, 154, 0.41);
+  color: #fff;
+}
+.subscription__caption-btn:hover:after {
+  opacity: 1;
+}
+.subscription__caption-btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(127.88deg, #EBF3D0 6.4%, rgba(235, 243, 208, 0) 18.7%), radial-gradient(42.66% 49.72% at 45.56% 44.65%, #CBADEB 0%, rgba(194, 166, 241, 0) 100%), linear-gradient(145.43deg, #CDF9E8 19.71%, rgba(205, 249, 232, 0) 67.7%), linear-gradient(216.44deg, rgba(192, 169, 240, 0) -16.52%, #C0A9F0 -1.04%, rgba(192, 169, 240, 0) 16.99%), linear-gradient(128.53deg, rgba(192, 169, 240, 0) 28.63%, #C0A9F0 38.5%, rgba(192, 169, 240, 0) 50.26%), radial-gradient(40.75% 97.37% at 90.75% 40.15%, #FFFDB1 0%, #FEE4BF 34.46%, #F0BDD0 69.5%, rgba(255, 129, 38, 0) 100%), #C2A6F1;
+}
+.subscription__caption-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.7s;
+  background: linear-gradient(109.27deg, #EBF3D0 6.33%, rgba(235, 243, 208, 0) 32.31%), radial-gradient(42.66% 49.72% at 45.56% 44.65%, #CBADEB 0%, rgba(194, 166, 241, 0) 100%), linear-gradient(145.43deg, #31FFAF 19.71%, rgba(205, 249, 232, 0) 67.7%), linear-gradient(216.44deg, rgba(108, 37, 255, 0) -16.52%, #5300FF -1.04%, rgba(83, 0, 255, 0) 16.99%), linear-gradient(115.25deg, rgba(83, 0, 255, 0) -2.27%, #C0A9F0 27.12%, rgba(83, 0, 255, 0.871858) 30.6%, rgba(83, 0, 255, 0) 62.13%), radial-gradient(40.75% 97.37% at 90.75% 40.15%, #FFFC9D 0%, #FFC676 34.46%, #FF5896 69.5%, rgba(255, 76, 0, 0.222007) 93.23%, rgba(255, 129, 38, 0) 100%), #9C61FF;
+}
+
+.subscription__caption-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subscription__caption-form-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 116%;
+  text-transform: capitalize;
+}
+
+p.subscription__caption-form-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--gray-2);
+  padding-top: 24px;
+}
+
+
+
+
 
 
 /*# sourceMappingURL=style.css.map */
