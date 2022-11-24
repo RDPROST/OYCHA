@@ -101,49 +101,98 @@
     </ul>
     <div></div></div>
     <main class="main">
-        <form class="auth">
-            <h1 class="auth__title">Authorization</h1>
-             <p class="auth__subtitle">Please enter your phone number (which is <br> recorded in your personal account)</p>
-         <div class="auth__group">
-             <label for="email" class="auth__label">
-                 <input class="auth__input" type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="1">
-                 <span>E-mail:</span>
-             </label>
-             <button class="button auth__button btn_auth">
-                 
-             </button>
-         </div>
-         <div class="auth__instant">
-             <svg width="194" height="2" viewBox="0 0 194 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                 <path opacity="0.2" d="M0 1L194 0.999983" stroke="black" stroke-dasharray="17 17"></path>
-             </svg>
-             <span>Instant Login</span>
-             <svg width="194" height="2" viewBox="0 0 194 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                 <path opacity="0.2" d="M0 1L194 0.999983" stroke="black" stroke-dasharray="17 17"></path>
-             </svg>
-         </div>
-         <div class="auth__instant-btns socials">
-             <a class="auth__instant-google" href="">
-                <div class="block_social_auth">
-                    <div class="social_element_auth">
+        <div class="select_auth">
+            
+                <form class="auth">
+                    <div class="array_auth_blocks">
+                        <div class="form_1">
+                            <h1 class="auth__title">Authorization</h1>
+                            <p class="auth__subtitle">Please enter your phone number (which is <br> recorded in your personal account)</p>
+                            <div class="auth__group">
+                                <label for="email" class="auth__label">
+                                    <input class="auth__input" type="email" id="email" size="30" required="" placeholder="1">
+                                    <span>E-mail:</span>
+                                </label>
+                                <button class="button auth__button btn_auth" type="button">
+                                    
+                                </button>
+                            </div>
+                            <div class="auth__instant">
+                                <svg width="194" height="2" viewBox="0 0 194 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M0 1L194 0.999983" stroke="black" stroke-dasharray="17 17"></path>
+                                </svg>
+                                <span>Instant Login</span>
+                                <svg width="194" height="2" viewBox="0 0 194 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M0 1L194 0.999983" stroke="black" stroke-dasharray="17 17"></path>
+                                </svg>
+                            </div>
+                            <div class="auth__instant-btns socials">
+                                <a class="auth__instant-google" href="">
+                                    <div class="block_social_auth">
+                                        <div class="social_element_auth">
 
-                    </div>
-                </div>
-             </a>
-             <a class="auth__instant-fb" href="">
-                <div class="block_social_auth block_social_auth_2">
-                   <div class="social_element_auth social_element_auth_2">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="auth__instant-fb" href="">
+                                    <div class="block_social_auth block_social_auth_2">
+                                    <div class="social_element_auth social_element_auth_2">
 
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="auth__reg-text">
+                                Don't have an OYCHA account yet?<br>
+                                <strong>You can</strong>
+                                <a class="auth__reg-link" href="Registration.html">register right now</a>
+                            </p>
+                        </div>
+                        <div class="form_1">
+                            <h1 class="auth__title">Please enter a password:</h1>
+                            <p class="auth__subtitle">Please enter your phone number (which is <br> recorded in your personal account)</p>
+                            <div class="auth__group">
+                                <label for="password" class="auth__label">
+                                    <input class="auth__input" type="password" id="password" pattern="" size="30" required="" placeholder="1">
+                                    <span>Password:</span>
+                                </label>
+                                <button class="button auth__button btn_auth" type="submit">
+                                    
+                                </button>
+                            </div>
+                            <div class="auth__instant">
+                                <svg width="194" height="2" viewBox="0 0 194 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M0 1L194 0.999983" stroke="black" stroke-dasharray="17 17"></path>
+                                </svg>
+                                <span>Instant Login</span>
+                                <svg width="194" height="2" viewBox="0 0 194 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.2" d="M0 1L194 0.999983" stroke="black" stroke-dasharray="17 17"></path>
+                                </svg>
+                            </div>
+                            <div class="auth__instant-btns socials">
+                                <a class="auth__instant-google" href="">
+                                    <div class="block_social_auth">
+                                        <div class="social_element_auth">
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="auth__instant-fb" href="">
+                                    <div class="block_social_auth block_social_auth_2">
+                                    <div class="social_element_auth social_element_auth_2">
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <p class="auth__reg-text">
+                                <a class="auth__reg-link" href="registration.html">Forgot password ?</a>
+                            </p>
+                        </div>
                     </div>
-                </div>
-             </a>
-         </div>
-         <p class="auth__reg-text">
-             Don't have an OYCHA account yet?<br>
-             <strong>You can</strong>
-             <a class="auth__reg-link" href="Registration.html">register right now</a>
-         </p>
-        </form>
+                </form>
+            </div>
+        </div>
      </main>
      <script src="js/auth.js"></script>
      <script src="js/app.js"></script>
