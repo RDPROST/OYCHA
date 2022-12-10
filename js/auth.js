@@ -5,6 +5,11 @@ document.querySelector('.btn_auth').addEventListener('click', () => {
     three = document.querySelectorAll('.array_auth_blocks')[0];
     let data = document.getElementsByTagName("input")[0];
     console.log(data);
+    if(!validation(reg,data.value))
+    {
+        data.className = 'auth__input';
+        data.classList.add('invalid');
+    }
     if(data!=null && data!="" && validation(reg,data.value)){ 
         let runSlide = startSlide(300);
         let goTrue = true;
