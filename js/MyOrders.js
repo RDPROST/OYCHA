@@ -1,5 +1,6 @@
 let acc = document.querySelectorAll(".order__item");
 let btn = document.querySelectorAll(".btn_view");
+
       let i;
 
       for (i = 0; i < acc.length; i++) {

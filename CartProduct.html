@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/app.css">
     <title>Document</title>
 </head>
@@ -100,118 +101,219 @@
         <li class="menu__list-item">OYCHA</li>
     </ul>
     <div></div></div>
-    <main class="recipe">
-        <section class="recipe_section">
-            <div class="full_recipe">
-                <div class="recipe_content">
-                    <div class="image_recipe_intro">
-                        <img class="img_recipe_intro" src="res/Recipe_intro_1.jpg" alt="">
-                    </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <span class="number_recipe">01</span>
-                            <span class="subtitle_recipe_intro">Blog / recipes</span>
-                            <span class="title_recipe_intro">Матча Латте (Hot / Ice)</span>
+    <main class="card-product">
+        <section class="product-section">
+            <div class="group-title-product">
+                <div class="left-part-product">
+                    <div class="imgs-left-part-product">
+                        <img class="img-card-product" src="res/CardProduct.jpg" alt="">
+                        <div class="imgs-additionaly-card-product">
+                            <img class="img-add-card-product" src="res/Card-product-2.jpg" alt="">
+                            <img class="img-add-card-product" src="res/Card-product-3.jpg" alt="">                    
+                        </div>
+                        <img class="img-card-product" src="res/CardProduct.jpg" alt="">
+                        <div class="imgs-additionaly-card-product">
+                            <img class="img-add-card-product" src="res/Card-product-2.jpg" alt="">
+                            <img class="img-add-card-product" src="res/Card-product-3.jpg" alt="">                    
                         </div>
                     </div>
-                    <div class="images_recipe_info">
-                        
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_1" src="res/Recipe_info_1.jpg" alt="">
+                </div>
+                <div class="right-part-product">
+                    <div class="right-part-product-block">
+                        <div class="head-right-part-product">
+                            <div class="head-block-categories">
+                                <div class="links_card_product">
+                                    <a href=""><span class="link_recipe link_product">Organic Green</span></a>
+                                    <span class="link_recipe">/</span>
+                                    <a href=""><span class="link_recipe link_product">China</span></a>
+                                    <span class="link_recipe">/</span>
+                                    <a href=""><span class="link_recipe link_product">2021</span></a>
+                                </div>
+                            </div>
+                            <button class="head-btn-favorite">
+                                <div class="heart-vector"></div>
+                            </button>
                         </div>
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_2" src="res/Recipe_info_2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <ul class="recipe_list">
-                                <li class="elem_recipe_list">Матча 2-2,5 г на 30-40 мл води, готується та взбивається за допомогою бамбукового вінчика  концентрат (або Hanatsubaki, або Nanzan grade)</li>
-                                <li class="elem_recipe_list">Рослинне / коров'яче молоко на вибір, в ідеалі взбите, але можна й звичайне у домашніх умовах, вливається по принципу капучіно молоко у матча - 150мл</li>
-                                <li class="elem_recipe_list">Лід за бажанням</li>
-                            </ul>
-                            <p class="text_recipe_info"></p>
+                        <div class="content-right-part-product">
+                            <span class="title-content-right-part-product">Molly bi lo chun jasmine</span>
+                            <p class="subtitle-content-right-part-product">Now everything has changed, but the cool Sencha can be found in the Kyiv wine bar, and Matcha on almond milk is prepared right under our house.</p>
+                            <div class="tasting-block">
+                                <span class="tasting-span"> TASTING NOTES:</span>
+                            </div>
+                            <div class="options-product-block">
+                                <div class="option-product">
+                                    <div class="option-vector-1"></div>
+                                    <span class="option">sweet buzka</span>
+                                </div>
+                                <div class="option-product">
+                                    <div class="option-vector-2"></div>
+                                    <span class="option">Jasmine</span>
+                                </div>
+                                <div class="option-product">
+                                    <div class="option-vector-3"></div>
+                                    <span class="option">aromatic herbs</span>
+                                </div>
+                                <div class="option-product option-country-product">
+                                    <span class="made-in">Made in</span>
+                                    <span class="made-in-country">China</span>
+                                </div>
+                            </div>
+                            <div class="footer-options-block">
+                                <div class="footer-options-left-part">
+                                    <div class="checkboxes-block-product">
+                                        <div class="checkbox-card-product-block">
+                                            <input class="checkbox-card-product" type="checkbox" id="check-1" checked>
+                                            <span class="title-check-card-product">4 oz zip pouch (AVG. 60 CUPS)</span>
+                                        </div>
+                                        <div class="checkbox-card-product-block">
+                                            <input class="checkbox-card-product checkbox-card-product-2" type="checkbox" id="check-2">
+                                            <span class="title-check-card-product">1 lb zip Pouch (AVG. 240 CUPS)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-options-right-part">
+                                    <div class="logo-right-part-1"></div>
+                                    <div class="logo-right-part-2"></div>
+                                </div>
+                            </div>
+                            <div class="add-to-cart-block">
+                                <button class="add-to-cart">
+                                    <span class="add-content-product-text">Add to cart -</span>   
+                                    <span class="add-content-product-text total-price-to-cart"></span>
+                                </button>
+                                <div class="plus-minus-btns">
+                                    <button class="minus">
+                                        <span class="minus-symbol">-</span>
+                                    </button>
+                                    <span class="number">1</span>
+                                    <button class="minus plus">
+                                        <span class="minus-symbol plus-symbol">+</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="full_recipe">
-                <div class="recipe_content">
-                    <div class="image_recipe_intro">
-                        <img class="img_recipe_intro" src="res/Recipe_intro_1.jpg" alt="">
-                    </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <span class="number_recipe">01</span>
-                            <span class="subtitle_recipe_intro">Blog / recipes</span>
-                            <span class="title_recipe_intro">Матча Латте (Hot / Ice)</span>
+            <div class="group-slider-product">
+                <span class="title-group-slider-product">STEEPING NOTES:</span>
+                <div class="slider-product">
+                    <div class="slider-wrapper">
+                        <div class="slider-item-product">
+                            <span class="title-item-product">WATER</span>
+                            <div class="vector-item-product"></div>
+                            <span class="title_card_slider_partners">6 fl oz / 180 ml</span>
+                            <p class="subtitle_card_slider_partners">Use O2 rich water, running stream or RO filtered</p>
                         </div>
-                    </div>
-                    <div class="images_recipe_info">
-                        
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_1" src="res/Recipe_info_1.jpg" alt="">
+                        <div class="slider-item-product">
+                            <span class="title-item-product">Temperature</span>
+                            <div class="vector-item-product-2"></div>
+                            <span class="title_card_slider_partners">185F -194F / 85C -90C</span>
+                            <p class="subtitle_card_slider_partners">Get the water temperature right to the recommended temperature</p>
                         </div>
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_2" src="res/Recipe_info_2.jpg" alt="">
+                        <div class="slider-item-product">
+                            <span class="title-item-product">Leaves</span>
+                            <div class="vector-item-product-3"></div>
+                            <span class="title_card_slider_partners">1.5 tsp / 0.09 oz / 2.5 g</span>
+                            <p class="subtitle_card_slider_partners">Use the suggested quantity above with the approximate water</p>
                         </div>
-                    </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <ul class="recipe_list">
-                                <li class="elem_recipe_list">Матча 2-2,5 г на 30-40 мл води, готується та взбивається за допомогою бамбукового вінчика  концентрат (або Hanatsubaki, або Nanzan grade)</li>
-                                <li class="elem_recipe_list">Рослинне / коров'яче молоко на вибір, в ідеалі взбите, але можна й звичайне у домашніх умовах, вливається по принципу капучіно молоко у матча - 150мл</li>
-                                <li class="elem_recipe_list">Лід за бажанням</li>
-                            </ul>
-                            <p class="text_recipe_info"></p>
+                        <div class="slider-item-product">
+                            <span class="title-item-product">Time</span>
+                            <div class="vector-item-product-4"></div>
+                            <span class="title_card_slider_partners">5 mins</span>
+                            <p class="subtitle_card_slider_partners">Infuse the leaves for a recommended time</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="full_recipe">
-                <div class="recipe_content">
-                    <div class="image_recipe_intro">
-                        <img class="img_recipe_intro" src="res/Recipe_intro_1.jpg" alt="">
-                    </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <span class="number_recipe">01</span>
-                            <span class="subtitle_recipe_intro">Blog / recipes</span>
-                            <span class="title_recipe_intro">Матча Латте (Hot / Ice)</span>
+            <div class="group-also-product">
+                <span class="title-group-slider-product">You May Also LikeM:</span>
+                <div class="shop-list-products">
+                    <div class="shop-list-product-items">
+                        <div class="shop-list-product-item">
+                            <div class="img-button-shop">
+                                <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                                <button class="button-shop-img">
+                                    <div class="button-content-shop">
+                                        <div class="button-content-shop-left">
+                                            <span class="button-content-shop-text">Add to cart</span>
+                                        </div>
+                                        <div class="button-content-shop-right">
+                                            <span class="button-content-shop-plus">+</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="links_recipes links_shop">
+                                <a href=""><span class="link_recipe">Herbal</span></a>
+                                <span class="link_recipe">/</span>
+                                <a href=""><span class="link_recipe">Chai</span></a>
+                                <span class="link_recipe">/</span>
+                                <a href=""><span class="link_recipe">2021</span></a>
+                            </div>
+                            <a class="link-product-item" href="">
+                                <span class="title-shop-item">Meditative Africa</span>
+                                <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                            </a>
                         </div>
-                    </div>
-                    <div class="images_recipe_info">
-                        
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_1" src="res/Recipe_info_1.jpg" alt="">
+                        <div class="shop-list-product-item">
+                            <div class="img-button-shop">
+                                <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                                <button class="button-shop-img">
+                                    <div class="button-content-shop">
+                                        <div class="button-content-shop-left">
+                                            <span class="button-content-shop-text">Add to cart</span>
+                                        </div>
+                                        <div class="button-content-shop-right">
+                                            <span class="button-content-shop-plus">+</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="links_recipes links_shop">
+                                <a href=""><span class="link_recipe">Herbal</span></a>
+                                <span class="link_recipe">/</span>
+                                <a href=""><span class="link_recipe">Chai</span></a>
+                                <span class="link_recipe">/</span>
+                                <a href=""><span class="link_recipe">2021</span></a>
+                            </div>
+                            <a class="link-product-item" href="">
+                                <span class="title-shop-item">Meditative Africa</span>
+                                <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                            </a>
                         </div>
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_2" src="res/Recipe_info_2.jpg" alt="">
+                        <div class="shop-list-product-item">
+                            <div class="img-button-shop">
+                                <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                                <button class="button-shop-img">
+                                    <div class="button-content-shop">
+                                        <div class="button-content-shop-left">
+                                            <span class="button-content-shop-text">Add to cart</span>
+                                        </div>
+                                        <div class="button-content-shop-right">
+                                            <span class="button-content-shop-plus">+</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="links_recipes links_shop">
+                                <a href=""><span class="link_recipe">Herbal</span></a>
+                                <span class="link_recipe">/</span>
+                                <a href=""><span class="link_recipe">Chai</span></a>
+                                <span class="link_recipe">/</span>
+                                <a href=""><span class="link_recipe">2021</span></a>
+                            </div>
+                            <a class="link-product-item" href="">
+                                <span class="title-shop-item">Meditative Africa</span>
+                                <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                            </a>
                         </div>
-                    </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <ul class="recipe_list">
-                                <li class="elem_recipe_list">Матча 2-2,5 г на 30-40 мл води, готується та взбивається за допомогою бамбукового вінчика  концентрат (або Hanatsubaki, або Nanzan grade)</li>
-                                <li class="elem_recipe_list">Рослинне / коров'яче молоко на вибір, в ідеалі взбите, але можна й звичайне у домашніх умовах, вливається по принципу капучіно молоко у матча - 150мл</li>
-                                <li class="elem_recipe_list">Лід за бажанням</li>
-                            </ul>
-                            <p class="text_recipe_info">Необхідно розтопити шоколад на паровій бані та додати вершки або жирну сметану. Змішати до однорідної консистенції, додати 2 столові ложки матча. До отриманої суміші додати вершкове масло та довести до однорідності. Після вилити у форму та дати шоколадові застигнути 5-6 годин.</p>
-                        </div>
-                    </div>
-                </div>
+                    </div>                 
+            </div>
             </div>
             <div class="subscription wrapper">
                 <div class="subscription__title">
-                    <h1>You can buy a premium or ceremonial match of the highest quality here:</h1>
-                    <a class="social_block_link" href="#" >
-                        <div class="social_oycha social_recipe">
-                            <div class="circle_inst">
-                                <div class="inst_oycha"></div>
-                            </div>
-                            <span style="padding: 7px 11px; font-weight: 500; font-size: 18px;">oycha.officia</span>
-                        </div>
-                    </a>
+                    <h1>stay up to date with all our news</h1>
                     <svg width="102" height="32" viewBox="0 0 790 179" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="790" height="179" fill="url(#pattern0)"></rect>
                         <defs>
@@ -223,28 +325,22 @@
                         </defs>
                     </svg>
                 </div>
-                <div class="subscription__caption" style="width: 680px; margin-left: 200px;">
-                    <div class="blocks_subscription">
-                        <img class="block_sub sub_image_1" src="res/Sub_1.jpg">
-                        <img class="block_sub sub_image_2" src="res/Sub_2.jpg">
-                        <img class="block_sub sub_image_3" src="res/Sub_3.jpg">
-                        <a class="block_sub_link" href="">
-                            <div class="block_sub sub_image_4">
-                                <div class="block_sub_spec">
-                                    <div class="block_sub_inst">
-
-                                    </div>
-                                    <span style="padding: 7px 11px; font-weight: 500; font-size: 18px; color: var(--black);">oycha.officia</span>
-                                    <div class="vector_arrow">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="subscription__caption" style="width: 30%;">
+                    <div class="subscription__caption-form">
+                        <p class="subscription__caption-form-title">SIGN uP &amp; gET 10% oFF yOUR fIRST pURCHASE!</p>
+                        <div class="subscription__caption-input">
+                            <input type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="Your E-mail:">
+                            <button class="subscription__caption-btn">
+                                <p>subscribe</p>
+                            </button>
+                            <p class="subscription__caption-form-subtitle">Free tasting at your establishment or sending samples of samples by Nova Poshta.</p>
+                        </div>
+                
                 </div>
-            </div>
+                </div>
+                </div>
         </section>
     </main>
+    <script src="js/CartProduct.js"></script>
 </body>
 </html>

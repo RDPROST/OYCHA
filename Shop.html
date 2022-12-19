@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/app.css">
     <title>Document</title>
 </head>
@@ -100,118 +101,515 @@
         <li class="menu__list-item">OYCHA</li>
     </ul>
     <div></div></div>
-    <main class="recipe">
-        <section class="recipe_section">
-            <div class="full_recipe">
-                <div class="recipe_content">
-                    <div class="image_recipe_intro">
-                        <img class="img_recipe_intro" src="res/Recipe_intro_1.jpg" alt="">
+
+    <main class="shop">
+        <section class="shop_section">
+            <div class="shop-head">
+                <div class="img-shop-head-block">
+                    <img class="img-shop-head" src="res/Shop_main.jpg" alt="">
+                    <span class="title-img-shop-head">Catalog</span>
+                </div>
+                <div class="shop-images-slider">   
+                    <button class="btn-shop-slider-card" > 
+                        <div class="shop-slider-card">
+                            <div class="shop-card">
+
+                            </div>
+                            <span class="title-shop-card">All products</span>
+                        </div> 
+                    </button>
+                    <button class="btn-shop-slider-card" > 
+                        <div class="shop-slider-card">
+                            <div class="shop-card">
+
+                            </div>
+                            <span class="title-shop-card">Tea</span>
+                        </div> 
+                    </button>
+                    <button class="btn-shop-slider-card" > 
+                        <div class="shop-slider-card">
+                            <div class="shop-card">
+
+                            </div>
+                            <span class="title-shop-card">Tools</span>
+                        </div> 
+                    </button>
+                    <button class="btn-shop-slider-card" > 
+                        <div class="shop-slider-card">
+                            <div class="shop-card">
+
+                            </div>
+                            <span class="title-shop-card">Tea bags</span>
+                        </div> 
+                    </button>
+                    <button class="btn-shop-slider-card" > 
+                        <div class="shop-slider-card">
+                            <div class="shop-card">
+
+                            </div>
+                            <span class="title-shop-card">Gifts</span>
+                        </div> 
+                    </button>
+                </div>
+                <div class="shop-slider-panel">
+                    <div class="btns-shop-slider-panel">
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">Green</span>
+                        </button>
+                        <div class="circle-shop"></div>
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">Matcha</span>
+                        </button>
+                        <div class="circle-shop"></div>
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">White</span>
+                        </button>
+                        <div class="circle-shop"></div>
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">Oolong</span>
+                        </button>
+                        <div class="circle-shop"></div>
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">Red</span>
+                        </button>
+                        <div class="circle-shop"></div>
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">Black</span>
+                        </button>
+                        <div class="circle-shop"></div>
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">Pu-erh</span>
+                        </button>
+                        <div class="circle-shop"></div>
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">Herbal</span>
+                        </button>
+                        <div class="circle-shop"></div>
+                        <button class="btn-shop-slider-panel" > 
+                            <span class="title-shop-panel">Floral</span>
+                        </button>
                     </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <span class="number_recipe">01</span>
-                            <span class="subtitle_recipe_intro">Blog / recipes</span>
-                            <span class="title_recipe_intro">Матча Латте (Hot / Ice)</span>
+                </div>
+            </div>
+            <div class="shop-search">
+                <div class="shop-search-board">
+                    <span class="shop-search-num-items">Items:124</span>
+                    <button class="filter">
+                        <span class="filter-name">filters()</span>
+                        <div class="vector-arrow"></div>
+                    </button>
+                    <button class="products">
+                        <span class="filter-name">All products</span>
+                    </button>
+                </div>
+                <div class="panel-filters-passive">
+                    <div class="panel-item-filter">
+                        <span class="title-item-filter">Taste</span>
+                        <div class="group-checkbox-filter">
+                            <div class="left-group-checkbox">
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Sweet</span>
+                                    </div>
+                                </div>
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Sour</span>
+                                    </div>
+                                </div>
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Salty</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-group-checkbox">
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check-box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Bitter</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="link-choose-filters">Choose all</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="images_recipe_info">
-                        
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_1" src="res/Recipe_info_1.jpg" alt="">
-                        </div>
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_2" src="res/Recipe_info_2.jpg" alt="">
+                    <div class="panel-item-filter">
+                        <span class="title-item-filter">Origin</span>
+                        <div class="group-checkbox-filter">
+                            <div class="left-group-checkbox">
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >China</span>
+                                    </div>
+                                </div>
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Japan</span>
+                                    </div>
+                                </div>
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Kenya</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-group-checkbox">
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check-box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Africa</span>
+                                    </div>
+                                </div>
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check-box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Georgia</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="link-choose-filters">Choose all</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <ul class="recipe_list">
-                                <li class="elem_recipe_list">Матча 2-2,5 г на 30-40 мл води, готується та взбивається за допомогою бамбукового вінчика  концентрат (або Hanatsubaki, або Nanzan grade)</li>
-                                <li class="elem_recipe_list">Рослинне / коров'яче молоко на вибір, в ідеалі взбите, але можна й звичайне у домашніх умовах, вливається по принципу капучіно молоко у матча - 150мл</li>
-                                <li class="elem_recipe_list">Лід за бажанням</li>
-                            </ul>
-                            <p class="text_recipe_info"></p>
+                    <div class="panel-item-filter">
+                        <span class="title-item-filter">Caffein</span>
+                        <div class="group-checkbox-filter">
+                            <div class="left-group-checkbox">
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >High</span>
+                                    </div>
+                                </div>
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Medium</span>
+                                    </div>
+                                </div>
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check__box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Low</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-group-checkbox">
+                                <div class="accept_terms_profile">
+                                    <div class="checkbox">
+                                        <input class="check-box" type="checkbox" id="terms" required>
+                                    </div>
+                                    <div class="reg__reg-text">
+                                    <span >Decaf</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="link-choose-filters">Choose all</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-item-filter">
+                        <span class="title-item-filter">Price</span>
+                        <div class="progress_bar filter-price slider">
+                                <div class="range-num">
+                                    <span class="number-range"></span>
+                                </div>
+                                <input class="progress__input sliderRange" type="range" min="0" max="1000" step="1" value="0" id="myRange">
+                        </div>
+                    </div>
+                    <div class="panel-item-filter">
+                        <span class="title-item-filter">Mood</span>
+                        <div class="mood-filters">
+                            <div class="mood-filter">
+                                <span class="mood-filter-text">Funny</span>
+                                <div class="close"></div>
+                            </div>
+                            <div class="mood-filter">
+                                <span class="mood-filter-text">Vigorous</span>
+                            </div>
+                            <div class="mood-filter">
+                                <span class="mood-filter-text">Dublious</span>
+                            </div>
+                            <div class="mood-filter">
+                                <span class="mood-filter-text">Dreary</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="full_recipe">
-                <div class="recipe_content">
-                    <div class="image_recipe_intro">
-                        <img class="img_recipe_intro" src="res/Recipe_intro_1.jpg" alt="">
+            <div class="shop-list-products">
+                <div class="shop-list-product-items">
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
+                        </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
                     </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <span class="number_recipe">01</span>
-                            <span class="subtitle_recipe_intro">Blog / recipes</span>
-                            <span class="title_recipe_intro">Матча Латте (Hot / Ice)</span>
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
                         </div>
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
+                        </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
                     </div>
-                    <div class="images_recipe_info">
-                        
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_1" src="res/Recipe_info_1.jpg" alt="">
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
                         </div>
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_2" src="res/Recipe_info_2.jpg" alt="">
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
                         </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
                     </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <ul class="recipe_list">
-                                <li class="elem_recipe_list">Матча 2-2,5 г на 30-40 мл води, готується та взбивається за допомогою бамбукового вінчика  концентрат (або Hanatsubaki, або Nanzan grade)</li>
-                                <li class="elem_recipe_list">Рослинне / коров'яче молоко на вибір, в ідеалі взбите, але можна й звичайне у домашніх умовах, вливається по принципу капучіно молоко у матча - 150мл</li>
-                                <li class="elem_recipe_list">Лід за бажанням</li>
-                            </ul>
-                            <p class="text_recipe_info"></p>
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
                         </div>
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
+                        </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
+                    </div>
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
+                        </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
+                    </div>
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
+                        </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
+                    </div>
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
+                        </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
+                    </div>
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
+                        </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
+                    </div>
+                    <div class="shop-list-product-item">
+                        <div class="img-button-shop">
+                            <img class="img-shop-list-item" src="res/Shop_list_item_2.jpg" alt="">
+                            <button class="button-shop-img">
+                                <div class="button-content-shop">
+                                    <div class="button-content-shop-left">
+                                        <span class="button-content-shop-text">Add to cart</span>
+                                    </div>
+                                    <div class="button-content-shop-right">
+                                        <span class="button-content-shop-plus">+</span>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="links_recipes links_shop">
+                            <a href=""><span class="link_recipe">Herbal</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">Chai</span></a>
+                            <span class="link_recipe">/</span>
+                            <a href=""><span class="link_recipe">2021</span></a>
+                        </div>
+                        <a class="link-product-item" href="">
+                            <span class="title-shop-item">Meditative Africa</span>
+                            <span class="price">$ 9,43 <span style="font-weight: 500; font-size: 18px; line-height: 141%; opacity:0.6;">/ 100g.</span></span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="full_recipe">
-                <div class="recipe_content">
-                    <div class="image_recipe_intro">
-                        <img class="img_recipe_intro" src="res/Recipe_intro_1.jpg" alt="">
-                    </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <span class="number_recipe">01</span>
-                            <span class="subtitle_recipe_intro">Blog / recipes</span>
-                            <span class="title_recipe_intro">Матча Латте (Hot / Ice)</span>
-                        </div>
-                    </div>
-                    <div class="images_recipe_info">
-                        
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_1" src="res/Recipe_info_1.jpg" alt="">
-                        </div>
-                        <div class="img_block_recipe_info">
-                            <img class="img_recipe_info_2" src="res/Recipe_info_2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="title_block_recipe">
-                        <div class="content_block_recipe">
-                            <ul class="recipe_list">
-                                <li class="elem_recipe_list">Матча 2-2,5 г на 30-40 мл води, готується та взбивається за допомогою бамбукового вінчика  концентрат (або Hanatsubaki, або Nanzan grade)</li>
-                                <li class="elem_recipe_list">Рослинне / коров'яче молоко на вибір, в ідеалі взбите, але можна й звичайне у домашніх умовах, вливається по принципу капучіно молоко у матча - 150мл</li>
-                                <li class="elem_recipe_list">Лід за бажанням</li>
-                            </ul>
-                            <p class="text_recipe_info">Необхідно розтопити шоколад на паровій бані та додати вершки або жирну сметану. Змішати до однорідної консистенції, додати 2 столові ложки матча. До отриманої суміші додати вершкове масло та довести до однорідності. Після вилити у форму та дати шоколадові застигнути 5-6 годин.</p>
-                        </div>
-                    </div>
-                </div>
+                <button class="btn load-more-products-shop">
+                    Load More
+                </button>
             </div>
             <div class="subscription wrapper">
                 <div class="subscription__title">
-                    <h1>You can buy a premium or ceremonial match of the highest quality here:</h1>
-                    <a class="social_block_link" href="#" >
-                        <div class="social_oycha social_recipe">
-                            <div class="circle_inst">
-                                <div class="inst_oycha"></div>
-                            </div>
-                            <span style="padding: 7px 11px; font-weight: 500; font-size: 18px;">oycha.officia</span>
-                        </div>
-                    </a>
+                    <h1>stay up to date with all our news</h1>
                     <svg width="102" height="32" viewBox="0 0 790 179" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="790" height="179" fill="url(#pattern0)"></rect>
                         <defs>
@@ -223,28 +621,53 @@
                         </defs>
                     </svg>
                 </div>
-                <div class="subscription__caption" style="width: 680px; margin-left: 200px;">
-                    <div class="blocks_subscription">
-                        <img class="block_sub sub_image_1" src="res/Sub_1.jpg">
-                        <img class="block_sub sub_image_2" src="res/Sub_2.jpg">
-                        <img class="block_sub sub_image_3" src="res/Sub_3.jpg">
-                        <a class="block_sub_link" href="">
-                            <div class="block_sub sub_image_4">
-                                <div class="block_sub_spec">
-                                    <div class="block_sub_inst">
-
+                <div class="subscription__caption" style="width: 30%;">
+                    <div class="subscription__caption-form">
+                        <p class="subscription__caption-form-title">SIGN uP &amp; gET 10% oFF yOUR fIRST pURCHASE!</p>
+                        <div class="subscription__caption-input">
+                            <input class="sub-email" type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="Your E-mail:">
+                            <button class="subscription__caption-btn">
+                                <p>subscribe</p>
+                            </button>
+                            <div class="modal">
+                                <div class="modal-window">
+                                    <button class="btn-close-modal-window">
+                                        <div class="btn-close-modal"></div>
+                                    </button>
+                                    <div class="logo-modal-window">
+                                        <div class="logo-3-modal"></div>
                                     </div>
-                                    <span style="padding: 7px 11px; font-weight: 500; font-size: 18px; color: var(--black);">oycha.officia</span>
-                                    <div class="vector_arrow">
-
-                                    </div>
+                                    <p class="h-7 title-modal-window">Thank you for being with us! welcome to the OYACHA team</p>
+                                    <p class="body-3 subtitle-modal-window">We sent you a discount coupon by email, now you can also follow our news</p>
+                                    <button class="btn load-more-products-shop btn-try-again">
+                                        Close
+                                    </button>
                                 </div>
+                                <div class="overlay"></div>
                             </div>
-                        </a>
-                    </div>
+                            <div class="modal modal-2">
+                                <div class="modal-window-2">
+                                    <button class="btn-close-modal-window btn-close-modal-window-2">
+                                        <div class="btn-close-modal btn-close-modal-2"></div>
+                                    </button>
+                                    <p class="h-7 title-modal-window">oops! something is wrong ...</p>
+                                    <p class="body-3 subtitle-modal-window">Please check that your email is correct</p>
+                                    <button class="btn btn-try-again load-more-products-shop">
+                                        Try again
+                                    </button>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                            <p class="subscription__caption-form-subtitle">Free tasting at your establishment or sending samples of samples by Nova Poshta.</p>
+                        </div>
+                
+                </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/modal-windows.js"></script>
 </body>
 </html>
