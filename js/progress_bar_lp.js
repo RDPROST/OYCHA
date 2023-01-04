@@ -1,5 +1,15 @@
 let slider = document.getElementById("fader");
 let array_cards = document.querySelectorAll('.card_loyalty')[0];
+
+var win = window,
+doc = document,
+docElem = doc.documentElement,
+body = doc.getElementsByTagName('body')[0],
+xWin = win.innerWidth || docElem.clientWidth || body.clientWidth,
+yWin = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+
+
+
 let x = 0;
 let y = 0;
 
@@ -10,8 +20,21 @@ let slideTo = (iLevel) => {
         eSlider.value = iLevel;
         y = iLevel * 25;
         slideCard();
+        if(xWin<=769)
+        {
+            let leftX = iLevel;
+            if(iLevel > 3) leftX = 3;
+            let progressBarFooter = document.querySelector('.progress-plus-footer');
+            progressBarFooter.scrollBy({
+
+                left: 92.1875*leftX, // на какое количество пикселей прокрутить вправо от текущей позиции
+                top: 0, // на какое количество пикселей прокрутить вниз от текущей позиции
+                behavior: 'smooth', // определяет плавность прокрутки: 'auto' - мгновенно (по умолчанию), 'smooth' - плавно
+            });
+            }
     }
 }
+
 
 
 function slideCard(){

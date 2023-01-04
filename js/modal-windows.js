@@ -4,16 +4,18 @@ let btn_modal = document.querySelector('.subscription__caption-btn');
 let btn_close_modal = document.querySelectorAll('.btn-close-modal-window');
 let btn_close_modal_block = document.querySelectorAll('.btn-try-again');
 let email = document.querySelector('.sub-email');
-let data = document.getElementsByTagName("input")[0];
+
 let modal = document.querySelectorAll('.modal');
 let modal_1 = document.querySelector('.modal');
 let modal_2 = document.querySelector('.modal-2');
+let overlay = document.querySelectorAll('.overlay');
 
 
-function validation(regex,data){
-    console.log(data.value);
-    return regex.test(data);
+function validation(regex,email){
+    console.log(email.value);
+    return regex.test(email);
 }
+
 for(let i = 0; i < btn_close_modal.length; i++){
     btn_close_modal[i].addEventListener('click', () =>{
         modal[i].className = 'modal';
@@ -33,7 +35,8 @@ for(let i = 0; i < btn_close_modal_block.length; i++){
 
 
 btn_modal.addEventListener('click', () => {
-    if(!validation(reg,data.value))
+    
+    if(!validation(reg,email.value))
     {
         modal[1].classList.toggle("modal-active");
         document.addEventListener( 'click', (e) => {

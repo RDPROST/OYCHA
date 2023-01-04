@@ -124,8 +124,12 @@
                     <p class="text_smaller_oycha">DMTL showcases their attention to detail with multiple denim and patchwork pieces for the colder months. Despite being known for that and the sashiko stitching that often occurs in their collections, the label expands beyond this by introducing military-inspired colors and silhouettes as well as athletic inspired patchwork pants and sweats. Stand out pieces includes their patchwork cardigan featuring green hems, polka dot patterns, stripes and khaki patches, their new range of coats, the second instalment of their ongoing project with Dickies and their new collaboration with Danner.</p>
                 </div>
                 <div class="images_oycha">
-                    <div class="left_block_image"></div>
-                    <div class="right_block_image"></div>
+                    <div class="left_block_image">
+                        <img class="left_block_image" src="./res/Oycha_left.jpg" alt="">
+                    </div>
+                    <div class="right_block_image">
+                        <img class="left_block_image" src="./res/Oycha_right.jpg" alt="">
+                    </div>
                 </div>
                 <div class="text_block_oycha">
                     <p class="text_smaller_oycha">Your IP address is a unique identifier we use to help diagnose problems with our server and to administer our web site tracking. We also use your IP address to help identify you when you make repeat visits to our site, keep track of your shopping cart contents, and to gather demographic information so that we can see what types of people are interested in our site.</p>
@@ -160,17 +164,48 @@
                         <div class="subscription__caption-form">
                             <p class="subscription__caption-form-title">SIGN uP &amp; gET 10% oFF yOUR fIRST pURCHASE!</p>
                             <div class="subscription__caption-input">
-                                <input type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="Your E-mail:">
+                                <input class="sub-email" type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="Your E-mail:">
                                 <button class="subscription__caption-btn">
-                                    <p>subscribe</p>
+                                    <p class="subscription__caption-btn-text">subscribe</p>
+                                        <div class="sub-arrow"></div>
                                 </button>
+                                <div class="modal">
+                                    <div class="modal-window">
+                                        <button class="btn-close-modal-window">
+                                            <div class="btn-close-modal"></div>
+                                        </button>
+                                        <div class="logo-modal-window">
+                                            <div class="logo-3-modal"></div>
+                                        </div>
+                                        <p class="h-7 title-modal-window">Thank you for being with us! welcome to the OYACHA team</p>
+                                        <p class="body-3 subtitle-modal-window">We sent you a discount coupon by email, now you can also follow our news</p>
+                                        <button class="btn load-more-products-shop btn-try-again">
+                                            Close
+                                        </button>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="modal modal-2">
+                                    <div class="modal-window-2">
+                                        <button class="btn-close-modal-window btn-close-modal-window-2">
+                                            <div class="btn-close-modal btn-close-modal-2"></div>
+                                        </button>
+                                        <p class="h-7 title-modal-window">oops! something is wrong ...</p>
+                                        <p class="body-3 subtitle-modal-window">Please check that your email is correct</p>
+                                        <button class="btn btn-try-again load-more-products-shop">
+                                            Try again
+                                        </button>
+                                    </div>
+                                    <div class="overlay"></div>
+                                </div>
                                 <p class="subscription__caption-form-subtitle">Free tasting at your establishment or sending samples of samples by Nova Poshta.</p>
                             </div>
                     
                     </div>
                     </div>
-                    </div>
+                </div>
         </section>
     </main>
+    <script src="js/modal-windows.js"></script>
 </body>
 </html>

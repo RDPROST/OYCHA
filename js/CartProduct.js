@@ -53,3 +53,110 @@ plus.addEventListener('click', () => {
     start_price+=3;
     price.innerHTML ="$" + start_price;
 })
+document.addEventListener('DOMContentLoaded', () =>{
+    var win = window,
+doc = document,
+docElem = doc.documentElement,
+body = doc.getElementsByTagName('body')[0],
+x = win.innerWidth || docElem.clientWidth || body.clientWidth,
+y = win.innerHeight|| docElem.clientHeight|| body.clientHeight;
+let swiper;
+let shopListCart = document.querySelector('.shop-list-products-cart');
+let shopCart = document.querySelector('.shop-list-product-items-cart');
+let shopListItem = document.querySelectorAll('.shop-list-product-item');
+
+let cartProductSlider = document.querySelector('.slider-product');
+let cartProductWrapper = document.querySelector('.slider-wrapper');
+let cartProductItem = document.querySelectorAll('.slider-item-product');
+
+let cartProductImage = document.querySelector('.images-mobile-slide');
+let cartProductImageWrapper = document.querySelector('.imgs-left-part-product-mobile');
+let cartProductImageItem = document.querySelectorAll('.img-card-product-mobile');
+if(x<=441){
+    shopListCart.className = 'shop-list-products-cart';
+    shopCart.className = 'shop-list-product-items-cart';
+    shopListCart.classList.add('swiper');
+    shopListCart.classList.add('mySwiper');
+    shopCart.classList.add('swiper-wrapper');
+
+    for(let i = 0; i < shopListItem.length; i++){
+        shopListItem[i].className = 'shop-list-product-item';
+        shopListItem[i].classList.add('swiper-slide');
+    }
+
+    cartProductSlider.className = 'slider-product';
+    cartProductWrapper.className = 'slider-wrapper';
+    cartProductWrapper.classList.add('swiper-wrapper');
+    cartProductSlider.classList.add('swiper');
+    cartProductSlider.classList.add('mySwiper');
+
+    for(let i = 0; i < cartProductItem.length; i++){
+        cartProductItem[i].className = 'slider-item-product';
+        cartProductItem[i].classList.add('swiper-slide');
+    }
+
+
+    cartProductImage.className = 'images-mobile-slide';
+    cartProductImageWrapper.className = 'imgs-left-part-product-mobile';
+    cartProductImageWrapper.classList.add('swiper-wrapper');
+    cartProductImage.classList.add('swiper');
+    cartProductImage.classList.add('mySwiper');
+
+    for(let i = 0; i < cartProductImageItem.length; i++){
+        cartProductImageItem[i].className = 'img-card-product-mobile';
+        cartProductImageItem[i].classList.add('swiper-slide');
+    }
+
+
+    swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    childElementCount: 3,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+  });
+}
+else{
+    shopListCart.className = 'shop-list-products-cart';
+    shopCart.className = 'shop-list-product-items-cart';
+    shopListCart.classList.remove('swiper');
+    shopListCart.classList.remove('mySwiper');
+    shopCart.classList.remove('swiper-wrapper');
+
+    for(let i = 0; i < shopListItem.length; i++){
+        shopListItem[i].className = 'shop-list-product-item';
+        shopListItem[i].classList.remove('swiper-slide');
+    }
+
+    cartProductSlider.className = 'slider-product';
+    cartProductWrapper.className = 'slider-wrapper';
+    cartProductWrapper.classList.remove('swiper-wrapper');
+    cartProductSlider.classList.remove('swiper');
+    cartProductSlider.classList.remove('mySwiper');
+
+    for(let i = 0; i < cartProductItem.length; i++){
+        cartProductItem[i].className = 'slider-item-product';
+        cartProductItem[i].classList.remove('swiper-slide');
+    }
+
+    cartProductImage.className = 'images-mobile-slide';
+    cartProductImageWrapper.className = 'imgs-left-part-product-mobile';
+    cartProductImageWrapper.classList.remove('swiper-wrapper');
+    cartProductImage.classList.remove('swiper');
+    cartProductImage.classList.remove('mySwiper');
+
+    for(let i = 0; i < cartProductImageItem.length; i++){
+        cartProductImageItem[i].className = 'img-card-product-mobile';
+        cartProductImageItem[i].classList.remove('swiper-slide');
+    }
+}
+})
+
+let headBtn = document.querySelector('.head-btn-favorite-mobile');
+let headBtnVector = document.querySelector('.heart-vector');
+headBtn.addEventListener('click', () =>{
+    headBtnVector.classList.toggle("heart-vector-active");
+})

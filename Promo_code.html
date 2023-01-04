@@ -149,10 +149,683 @@
                         </div>
                     </div>
             </div>
+            <div class="left_bar-mobile">
+                <div class="left_bar_list">
+                    <div class="left_bar_link_section btn-left-bar-accordion">
+                        <div class="left_bar_item ">
+                            <div class="left_bar_vector">
+
+                            </div>
+                            <span class="left_bar_name">My profile</span>
+                            <div class="vector-acc"></div>
+                        </div>
+ 
+                    </div>
+                    <div class="panel-bar-mobile">
+                        <div class="content_part-mobile">
+                            <div class="right_content_part">
+                                <div class="title_block">
+                                    <span class="title_lp">Welcome</span>
+                                </div>
+                                <div class="info_promo info_profile">
+                                    <p class="info_loyalty_text">Here you can keep track of your recent activity, request return authorizations for orders you have received, and view and edit your account information or list of favorite items.</p>
+                                </div>
+                                <div class="enter_data">
+                                    <form class="enter_data_form">
+                                    <div class="left__myprofile__group">
+                                        <div class="group_reg_1">
+                                            <label for="first_name" class="auth__label reg_group_label_1">
+                                                <input class="auth__input" type="first_name" id="first_name" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                                <span>First Name</span>
+                                            </label>
+                                            <label for="last_name" class="auth__label reg_group_label_1">
+                                                <input class="auth__input" type="last_name" id="last_name" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                                <span>Last Name</span>
+                                            </label>
+                                        </div>
+                                        <label for="email" class="auth__label reg_group_label_2">
+                                            <input class="auth__input profile__input" type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                            <span>E-mail</span>
+                                        </label>
+                                        <div class="group_reg_1">
+                                            <label for="country" class="auth__label reg_group_label_1">
+                                                <input class="auth__input" type="country" id="country" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                                <span>Your country</span>
+                                            </label>
+                                                
+                                            <label for="phone_number" class="auth__label reg_group_label_1">
+                                                <input class="auth__input" type="phone_number" id="phone_number" data-phone-clear="false" data-phone-pattern="+380 (___) ___-__-__" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                                <span>Phone number</span>
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="right__myprofile__group">
+                                        <div class="accept_terms_profile">
+                                            <div class="checkbox">
+                                                <input class="check__box" type="checkbox" id="terms" required>
+                                            </div>
+                                            <div class="reg__reg-text">
+                                            <span >Change password</span>
+                                            </div>
+                                        </div>
+                                        <div class="group_reg_1">
+                                            <label for="password" class="auth__label reg_group_label_1">
+                                                <input class="auth__input" type="password" id="password" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                                <span>Old Password:</span>
+                                            </label>
+                                            <label for="password" class="auth__label reg_group_label_1">
+                                                <input class="auth__input" type="password" id="password" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                                <span>New Password:</span>
+                                            </label> 
+                                        </div>
+                                        <div class="reg_btn save_btn">
+                                            <button class="btn reg_get_btn" type="submit">
+                                                Save changes
+                                            </button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="title_block">
+                                    <span class="title_lp">My address</span>
+                                </div>
+                                <div class="enter_data">
+                                    <div class="left__myprofile__group left__myprofile__group__address">
+                                        <div class="text_myprofile_address">
+                                            <span class="title_lp">Billing address</span>
+                                            <span class="title_lp info_profile_text">You have not set up this type of address yet.</span>
+                                        </div>
+                                        <div class="add_address">
+                                            <div class="add_address_block">
+                                                <div class="block_link_address">
+                                                    <a href="#" class="link_add_address" onClick='this.innerHTML=="Remove address" ? this.innerHTML="Add address" : this.innerHTML="Remove address"'>Add address</a>
+                                                </div>
+                                                <div class="accept_terms_profile">
+                                                    <div class="checkbox">
+                                                        <input class="check__box" type="checkbox" id="terms" required>
+                                                    </div>
+                                                    <div class="reg__reg-text">
+                                                    <span class="body-4" style="opacity: 0.5;">Same as shipping</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="address__panel">
+                                                <div class="info_address_profile info_address__panel">
+                                                    <form class="info_address_form">
+                                                    <div class="group_reg_1">
+                                                        <label for="country" class="auth__label reg_group_label_1">
+                                                            <input class="auth__input" type="country" id="country"  size="30" required="" placeholder="1">
+                                                            <span>Your country</span>
+                                                        </label>
+                                                            
+                                                        <label for="state" class="auth__label reg_group_label_1">
+                                                            <input class="auth__input" type="state" id="state"  size="30" required="" placeholder="1">
+                                                            <span>State/Province</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="group_reg_1">
+                                                        <label for="city" class="auth__label reg_group_label_1">
+                                                            <input class="auth__input" type="city" id="city"  size="30" required="" placeholder="1">
+                                                            <span>City</span>
+                                                        </label>
+                                                            
+                                                        <label for="code" class="auth__label reg_group_label_1">
+                                                            <input class="auth__input" type="code" id="code"  size="30" required="" placeholder="1">
+                                                            <span>Zip code</span>
+                                                        </label>
+                                                    </div>
+                                                    <label for="email" class="auth__label reg_group_label_2">
+                                                        <input class="auth__input profile__input" type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                                        <span>Address</span>
+                                                    </label>
+                                                    <div class="reg_btn save_btn save_btn_2">
+                                                        <button class="btn reg_get_btn" type="submit">
+                                                            Save changes
+                                                        </button>
+                                                    </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right__myprofile__group right__myprofile__group__address">
+                                        <div class="text_myprofile_address">
+                                            <span class="title_lp">Shipping Address</span>
+                                            <span class="title_lp info_profile_text">You have not set up this type of address yet.</span>
+                                        </div>
+                                        <div class="info_address_profile">
+                                            <form class="info_address_form">
+                                            <div class="group_reg_1">
+                                                <label for="first_name" class="auth__label reg_group_label_1">
+                                                    <input class="auth__input" type="first_name" id="first_name" size="30" required="" placeholder="1">
+                                                    <span>First Name</span>
+                                                </label>
+                                                <label for="last_name" class="auth__label reg_group_label_1">
+                                                    <input class="auth__input" type="last_name" id="last_name"  size="30" required="" placeholder="1">
+                                                    <span>Last Name</span>
+                                                </label>
+                                            </div>
+                                            <div class="group_reg_1">
+                                                <label for="country" class="auth__label reg_group_label_1">
+                                                    <input class="auth__input" type="country" id="country"  size="30" required="" placeholder="1">
+                                                    <span>Your country</span>
+                                                </label>
+                                                    
+                                                <label for="state" class="auth__label reg_group_label_1">
+                                                    <input class="auth__input" type="state" id="state"  size="30" required="" placeholder="1">
+                                                    <span>State/Province</span>
+                                                </label>
+                                            </div>
+                                            <div class="group_reg_1">
+                                                <label for="city" class="auth__label reg_group_label_1">
+                                                    <input class="auth__input" type="city" id="city"  size="30" required="" placeholder="1">
+                                                    <span>City</span>
+                                                </label>
+                                                    
+                                                <label for="code" class="auth__label reg_group_label_1">
+                                                    <input class="auth__input" type="code" id="code"  size="30" required="" placeholder="1">
+                                                    <span>Zip code</span>
+                                                </label>
+                                            </div>
+                                            <label for="email" class="auth__label reg_group_label_2">
+                                                <input class="auth__input profile__input" type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="1">
+                                                <span>Address</span>
+                                            </label>
+                                            <div class="reg_btn save_btn save_btn_2">
+                                                <button class="btn reg_get_btn" type="submit">
+                                                    Save changes
+                                                </button>
+                                            </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left_bar_link_section btn-left-bar-accordion">
+                        <div class="left_bar_item">
+                            <div class="left_bar_vector_2">
+
+                            </div>
+                            <span class="left_bar_name">My orders</span>
+                            <div class="vector-acc"></div>
+                        </div>
+                    </div>
+                    <div class="panel-bar-mobile">
+                        <div class="content_part-mobile">
+                            <div class="right_content_part order_right_content">
+                                <div class="title_block">
+                                    <span class="title_lp">Order status</span>
+                                </div>
+                                <div class="order-empty">
+                                    <div class="logo-order-empty"></div>
+                                    <span class="title-order-empty h-11">There is nothing here yet</span>
+                                    <span class="subtitle-order-empty body-3">But it's time to order something<br> in our store</span>
+                                    <button class="btn load-more-products-shop btn-try-again">
+                                        <span class="btn-order-empty">Shop</span>
+                                    </button>
+                                </div>
+                                <div class="order_status_table">
+                                    <div class="title_table">
+                                        <span class="text_title_table">Number</span>
+                                        <span class="text_title_table">Date</span>
+                                        <span class="text_title_table">Order total</span>
+                                        <span class="text_title_table">Status</span>
+                                        <span class="text_title_table text_title_table_2"></span>
+                                    </div>
+                                    <div class="order__item">
+                                        <div class="order__accordion">
+                                            <span class="text_status_table">#8400658464</span>
+                                            <span class="text_status_table empty-column-order">15/10/2018</span>
+                                            <span class="text_status_table empty-column-order">$ 1536.75</span>
+                                            <span class="text_status_table empty-column-order">On it’s way</span>
+                                            <div class="btn_view">
+                                                <a href="#" onClick='this.innerHTML=="Close" ? this.innerHTML="View" : this.innerHTML="Close"'>
+                                                    View
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="order__panel">
+                                            <img class="image_item_noblock" src="res/Rectangle 120.jpg" alt="">
+                                            <div class="invisable_block"></div>
+                                            <div class="order_total">
+                                                <div class="total_top">
+                                                    <span class="text_status_table">Molly bi lo chun jasmine</span>
+                                                    <span class="text_status_table text_gray_status">1 lb zip Pouch (AVG. 240 CUPS)</span>
+                                                </div>
+                                                <span class="text_status_table text_gray_status text_amount">Amount: 1</span>
+                                            </div>
+                                            <div class="status_order">
+                                                <span class="text_status_table text_gray_status">Your order has been collected<br> and shipped to its destination</span>
+                                                <a href="#">Contact us</a>
+                                            </div>
+                                            <div class="invisable_block_2"></div>
+                                            <div class="status-order-mobile">
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Amount</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Date</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">15/10/2018</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Status</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">On it’s way</span>
+                                                        <p class="subtitle-status-order-mobile-item-text">Your order has been collected<br> and shipped to its destination</p>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item last-order-item">
+                                                    <span class="title-status-order-mobile-item">Order total</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">$ 1536.75</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status_order-link">
+                                                    <a href="#">Contact us</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__item">
+                                        <div class="order__accordion">
+                                            <span class="text_status_table">#8400658464</span>
+                                            <span class="text_status_table empty-column-order">15/10/2018</span>
+                                            <span class="text_status_table empty-column-order">$ 1536.75</span>
+                                            <span class="text_status_table empty-column-order">On it’s way</span>
+                                            <div class="btn_view">
+                                                <a href="#" onClick='this.innerHTML=="Close" ? this.innerHTML="View" : this.innerHTML="Close"'>
+                                                    View
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="order__panel">
+                                            <img class="image_item_noblock" src="res/Rectangle 120.jpg" alt="">
+                                            <div class="invisable_block"></div>
+                                            <div class="order_total">
+                                                <div class="total_top">
+                                                    <span class="text_status_table">Molly bi lo chun jasmine</span>
+                                                    <span class="text_status_table text_gray_status">1 lb zip Pouch (AVG. 240 CUPS)</span>
+                                                </div>
+                                                <span class="text_status_table text_gray_status text_amount">Amount: 1</span>
+                                            </div>
+                                            <div class="status_order">
+                                                <span class="text_status_table text_gray_status">Your order has been collected<br> and shipped to its destination</span>
+                                                <a href="#">Contact us</a>
+                                            </div>
+                                            <div class="invisable_block_2"></div>
+                                            <div class="status-order-mobile">
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Amount</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Date</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">15/10/2018</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Status</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">On it’s way</span>
+                                                        <p class="subtitle-status-order-mobile-item-text">Your order has been collected<br> and shipped to its destination</p>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item last-order-item">
+                                                    <span class="title-status-order-mobile-item">Order total</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">$ 1536.75</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status_order-link">
+                                                    <a href="#">Contact us</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="title_block title_block_history">
+                                    <span class="title_lp">Order history</span>
+                                </div>
+                                <div class="order_status_table order_status_table-2">
+                                    <div class="title_table">
+                                        <span class="text_title_table">Number</span>
+                                        <span class="text_title_table">Date</span>
+                                        <span class="text_title_table">Order total</span>
+                                        <span class="text_title_table">Status</span>
+                                        <span class="text_title_table text_title_table_2"></span>
+                                    </div>
+                                    <div class="order__item">
+                                        <div class="order__accordion">
+                                            <span class="text_status_table">#8400658464</span>
+                                            <span class="text_status_table empty-column-order">15/10/2018</span>
+                                            <span class="text_status_table empty-column-order">$ 1536.75</span>
+                                            <span class="text_status_table empty-column-order">Delivered</span>
+                                            <div class="btn_view">
+                                                <a href="#" onClick='this.innerHTML=="Close" ? this.innerHTML="View" : this.innerHTML="Close"'>
+                                                    View
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="order__panel">
+                                            <img class="image_item_noblock" src="res/Rectangle 120.jpg" alt="">
+                                            <div class="invisable_block"></div>
+                                            <div class="order_total">
+                                                <div class="total_top">
+                                                    <span class="text_status_table">Molly bi lo chun jasmine</span>
+                                                    <span class="text_status_table text_gray_status">1 lb zip Pouch (AVG. 240 CUPS)</span>
+                                                </div>
+                                                <span class="text_status_table text_gray_status text_amount">Amount: 1</span>
+                                            </div>
+                                            <div class="status_order">
+                                                <span class="text_status_table text_gray_status">Your order has been collected<br> and shipped to its destination</span>
+                                                <a href="#">Contact us</a>
+                                            </div>
+                                            <div class="invisable_block_2"></div>
+                                            <div class="status-order-mobile">
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Amount</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Date</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">15/10/2018</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Status</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">Delivered</span>
+                                                        <p class="subtitle-status-order-mobile-item-text">Your order has been collected<br> and shipped to its destination</p>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item last-order-item">
+                                                    <span class="title-status-order-mobile-item">Order total</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">$ 1536.75</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status_order-link">
+                                                    <a href="#">Contact us</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__item">
+                                        <div class="order__accordion">
+                                            <span class="text_status_table">#8400658464</span>
+                                            <span class="text_status_table empty-column-order">15/10/2018</span>
+                                            <span class="text_status_table empty-column-order">$ 1536.75</span>
+                                            <span class="text_status_table empty-column-order">Delivered</span>
+                                            <div class="btn_view">
+                                                <a href="#" onClick='this.innerHTML=="Close" ? this.innerHTML="View" : this.innerHTML="Close"'>
+                                                    View
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="order__panel">
+                                            <img class="image_item_noblock" src="res/Rectangle 120.jpg" alt="">
+                                            <div class="invisable_block"></div>
+                                            <div class="order_total">
+                                                <div class="total_top">
+                                                    <span class="text_status_table">Molly bi lo chun jasmine</span>
+                                                    <span class="text_status_table text_gray_status">1 lb zip Pouch (AVG. 240 CUPS)</span>
+                                                </div>
+                                                <span class="text_status_table text_gray_status text_amount">Amount: 1</span>
+                                            </div>
+                                            <div class="status_order">
+                                                <span class="text_status_table text_gray_status">Your order has been collected<br> and shipped to its destination</span>
+                                                <a href="#">Contact us</a>
+                                            </div>
+                                            <div class="invisable_block_2"></div>
+                                            <div class="status-order-mobile">
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Amount</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Date</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">15/10/2018</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item">
+                                                    <span class="title-status-order-mobile-item">Status</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">Delivered</span>
+                                                        <p class="subtitle-status-order-mobile-item-text">Your order has been collected<br> and shipped to its destination</p>
+                                                    </div>
+                                                </div>
+                                                <div class="status-order-mobile-item last-order-item">
+                                                    <span class="title-status-order-mobile-item">Order total</span>
+                                                    <div class="subtitle-status-order-item">
+                                                        <span class="subtitle-status-order-mobile-item">$ 1536.75</span>
+                                                    </div>
+                                                </div>
+                                                <div class="status_order-link">
+                                                    <a href="#">Contact us</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left_bar_link_section active_section_bar btn-left-bar-accordion">
+                        <div class="left_bar_item active_item_bar">
+                            <div class="left_bar_vector_3">
+
+                            </div>
+                            <span class="left_bar_name">Promo code</span>
+                            <div class="vector-acc"></div>
+                        </div>
+                    </div>
+                    <div class="panel-bar-mobile">
+                        <div class="content_part-mobile">
+                            <div class="right_content_part">
+                                <div class="title_block">
+                                    <span class="title_lp">Promo code</span>
+                                </div>
+                                <div class="promo-empty">
+                                    <div class="logo-promo-empty"></div>
+                                    <span class="title-order-empty h-11">There is nothing here yet</span>
+                                    <span class="subtitle-order-empty body-3">But it's time to order something<br> in our store</span>
+                                    <button class="btn load-more-products-shop btn-try-again">
+                                        <span class="btn-order-empty">Shop</span>
+                                    </button>
+                                </div>
+                                <div class="info_promo promo-code-subtitle">
+                                    <p class="info_loyalty_text">Use your coupon to get a discount on any order from our website, with love OYCHA!</p>
+                                </div>
+                                <div class="card_promo">
+                                    <div class="info_loyalty_block info_promo_block">
+                                        <div class="block_image_loyalty block_image_promo">
+                                            <div class="image_loyalty image_promo">
+            
+                                            </div>
+                                        </div>
+                                        <div class="info_loyalty">
+                                            <div class="level_info">
+                                                <span class="procent"><strong>OYCHASILVER 5%</strong></span>
+                                                <span class="level">The amount of your discount is 5%</span>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left_bar_link_section btn-left-bar-accordion">
+                        <div class="left_bar_item ">
+                            <div class="left_bar_vector_4">
+
+                            </div>
+                            <span class="left_bar_name">Loyalty program</span>
+                            <div class="vector-acc"></div>
+                        </div>
+                    </div>
+                    <div class="panel-bar-mobile">
+                        <div class="content_part-mobile">
+                            <div class="right_content_part">
+                                <div class="title_block">
+                                    <span class="title_lp">Loyalty Program</span>
+                                </div>
+                                <div class="select_card">
+                                    <div class="card_loyalty">
+                                        <div class="info_loyalty_block">
+                                            <div class="info_loyalty_none">
+                                                <p class="info_loyalty_text">In this section we reveal customers' favourite gift choices for the beautiful ladies and fine gentlemen in their lives, whether friends and colleagues, aunts and nephews, fathers and daughters,</p>
+                                            </div>
+                                        </div>
+                                        <div class="info_loyalty_block">
+                                            <div class="block_image_loyalty">
+                                                <div class="image_loyalty">
+            
+                                                </div>
+                                            </div>
+                                            <div class="info_loyalty">
+                                                <div class="level_info">
+                                                    <span class="level">Your level</span>
+                                                    <span class="procent"><strong>Silver 5%</strong></span>
+                                                </div>
+                                                <ul class="list_benefits">
+                                                    <li class="list_benefits_elem">5% off all purchases</li>
+                                                    <li class="list_benefits_elem">online support 24/7</li>
+                                                    <li class="list_benefits_elem">free subscription</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info_loyalty_block">
+                                            <div class="block_image_loyalty block_image_loyalty_2">
+                                                <div class="image_loyalty">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="info_loyalty">
+                                                <div class="level_info">
+                                                    <span class="level">Your level</span>
+                                                    <span class="procent"><strong>Gold 10%</strong></span>
+                                                </div>
+                                                <ul class="list_benefits">
+                                                    <li class="list_benefits_elem">10% off all purchases</li>
+                                                    <li class="list_benefits_elem">online support 24/7</li>
+                                                    <li class="list_benefits_elem">free subscription</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="info_loyalty_block">
+                                            <div class="block_image_loyalty block_image_loyalty_3">
+                                                <div class="image_loyalty">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="info_loyalty">
+                                                <div class="level_info">
+                                                    <span class="level">Your level</span>
+                                                    <span class="procent"><strong>Platinum 15%</strong></span>
+                                                </div>
+                                                <ul class="list_benefits">
+                                                    <li class="list_benefits_elem">15% off all purchases</li>
+                                                    <li class="list_benefits_elem">online support 24/7</li>
+                                                    <li class="list_benefits_elem">free subscription</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress-plus-footer">
+                                    <div class="progress_bar">
+                                        <label for="">
+                                            <input class="progress__input" type="range" min="0" max="4" step="1" value="0" id="fader">
+                                        </label>
+                                    </div>
+                                    <div class="footer_blocks_level">
+                                        <div class="block_level_info correct_block">
+                                            <div class="invisible_block_level">
+                                                <div class="block_level_info_line"></div>
+                                            <span class="level">Passed level</span>
+                                            <span class="procent"><strong>Silver 5%</strong></span>
+                                            <ul class="list_benefits_level">
+                                                <li class="list_benefits_elem">Make purchases for 150$</li>
+                                                <li class="list_benefits_elem">Subscribe to news</li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                        <div class="block_level_info correct_block">
+                                            <div class="block_level_info_line"></div>
+                                            <span class="level">Passed level</span>
+                                            <span class="procent"><strong>Silver 5%</strong></span>
+                                            <ul class="list_benefits_level">
+                                                <li class="list_benefits_elem">Make purchases for 150$</li>
+                                                <li class="list_benefits_elem">Subscribe to news</li>
+                                            </ul>
+                                        </div>
+                                        <div class="block_level_info correct_block">
+                                            <div class="block_level_info_line"></div>
+                                            <span class="level">Next level</span>
+                                            <span class="procent"><strong>Gold 10%</strong></span>
+                                            <span>left to the level:</span>
+                                            <ul class="list_benefits_level">
+                                                <li class="list_benefits_elem">Make purchases for 356$</li>
+                                                <li class="list_benefits_elem">Subscribe to news</li>
+                                            </ul>
+                                        </div>
+                                        <div class="block_level_info correct_block">
+                                            <div class="block_level_info_line"></div>
+                                            <span class="level">Last level</span>
+                                            <span class="procent"><strong>Platinum 15%</strong></span>
+                                            <span>left to the level:</span>
+                                            <ul class="list_benefits_level">
+                                                <li class="list_benefits_elem">Make purchases for 1356$</li>
+                                                <li class="list_benefits_elem">Subscribe to news</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left_bar_item_help">
+                        <div class="help_block">
+                            <div class="left_bar_vector_help">
+
+                            </div>
+                            <span class="left_bar_name_help">Help</span>
+                        </div>
+                        <div class="text_help">
+                            <span>You can <a href=""> Contact Us </a>and<br> will reach out to as soon<br> as we can</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
             <div class="content_part">
                 <div class="right_content_part">
                     <div class="title_block">
                         <span class="title_lp">Promo code</span>
+                    </div>
+                    <div class="order-empty">
+                        <div class="logo-promo-empty"></div>
+                        <span class="title-order-empty h-11">There is nothing here yet</span>
+                        <span class="subtitle-order-empty body-3">But it's time to order something<br> in our store</span>
+                        <button class="btn load-more-products-shop btn-try-again">
+                            <span class="btn-order-empty">Shop</span>
+                        </button>
                     </div>
                     <div class="info_promo">
                         <p class="info_loyalty_text">Use your coupon to get a discount on any order from our website, with love OYCHA!</p>
@@ -176,5 +849,10 @@
             </div>
         </div>
     </main>
+    <script src="js/MyProfile.js"></script>
+    <script src="js/ProfileMobile.js"></script>
+    <script src="js/MyOrders.js"></script>
+    <script src="js/PromoCode.js"></script>
+    <script src="js/progress_bar_lp.js"></script>
 </body>
 </html>

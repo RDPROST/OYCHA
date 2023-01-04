@@ -11,20 +11,53 @@ let btnFilter = document.querySelector('.filter');
 let panelFilter = document.querySelector('.panel-filters-passive');
 let arrow = document.querySelector('.vector-arrow');
 let countClick = 0;
-
+let countPanelClick = [1,1,1,1,1];
+let flag = 0;
+let currentPanel = 0;
 let btnSliderPanel = document.querySelectorAll('.btn-shop-slider-card');
-let sliderPanel = document.querySelector('.shop-slider-panel');
+let sliderPanel = document.querySelectorAll('.shop-slider-panel');
+
+let btnAddMobile = document.querySelectorAll('.button-shop-img-mobile');
+let btnAddContent = document.querySelectorAll('.button-content-shop-plus-mobile');
+let btnAddBlock = document.querySelectorAll('.button-content-shop-right-mobile');
+for(let i = 0; i < btnAddMobile.length; i++)
+    {
+        btnAddMobile[i].addEventListener('click', () => {
+            btnAddMobile[i].classList.toggle("button-shop-img-mobile-active");
+            btnAddContent[i].classList.toggle("button-content-shop-plus-mobile-active");
+            btnAddBlock[i].classList.toggle("button-content-shop-right-mobile-active");
+        })
+    }
 for(let i = 0; i < btnSliderPanel.length; i++)
     {
         btnSliderPanel[i].addEventListener('click', () => {
-            
-            sliderPanel[i].className = 'shop-slider-panel';
-            sliderPanel[i].classList.add('shop-slider-panel-active')
-        })
-        btnSliderPanel[i].addEventListener('mouseleave', () => {
-            
-            sliderPanel[i].className = 'shop-slider-panel';
-            sliderPanel[i].classList.remove('shop-slider-panel-active')
+            countPanelClick[i]++;
+            if(countPanelClick[i]%2 == 0){
+                console.log(flag);
+                if(flag == 0){
+                    sliderPanel[i].className = 'shop-slider-panel';
+                    sliderPanel[i].classList.add('shop-slider-panel-active');
+                    flag = 1;
+                    currentPanel = i;
+                    console.log("flag 0 " + currentPanel);
+                }
+                else{
+                    sliderPanel[currentPanel].className = 'shop-slider-panel';
+                    sliderPanel[currentPanel].classList.remove('shop-slider-panel-active');
+                    sliderPanel[i].className = 'shop-slider-panel';
+                    sliderPanel[i].classList.add('shop-slider-panel-active');
+                    flag = 1;
+                    currentPanel = i;
+                    console.log("flag 1 " + currentPanel);
+                }
+            }
+            else{
+                sliderPanel[i].className = 'shop-slider-panel';
+                sliderPanel[i].classList.remove('shop-slider-panel-active');
+                currentPanel = 0;
+                flag = 0;
+                countPanelClick[i] = 1;
+            }
         })
     }
 btnFilter.addEventListener('click', () =>{
@@ -37,7 +70,7 @@ btnFilter.addEventListener('click', () =>{
     if (panelFilter.style.maxHeight){
         panelFilter.style.maxHeight = null;
       } else {
-        panelFilter.style.maxHeight = 570 + "px";
+        panelFilter.style.maxHeight = panelFilter.scrollHeight + 170 + "px";
       }
 })    
     for(let i = 0; i < moodBlock.length; i++)
@@ -79,4 +112,13 @@ for(let i = 0; i < item.length; i++)
         })
     }
 
+    var slider = document.getElementById('slider');
 
+    noUiSlider.create(slider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });

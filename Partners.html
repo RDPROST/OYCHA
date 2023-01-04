@@ -107,7 +107,7 @@
     <main class="oycha">
         <section class="oycha_section">
             <div class="content_oycha">
-                <div class="partners_block">
+                <div class="partners_block content_partner_2">
                     <div class="left_block_partners">
                         <h1 class="title_partners">partners</h1>
                     </div>
@@ -120,13 +120,21 @@
                 </div>
             </div>
             <div class="images_block">    
-                <a href="#"><div class="partners_image_1"></div></a> 
-                <a href="#"><div class="partners_image_2"></div></a> 
-                <a href="#"><div class="partners_image_3"></div></a> 
-                <a href="#"><div class="partners_image_4"></div></a> 
+                <a href="#"><div class="partners_image_1">
+                    <img class="partners_image_1" src="./res/Partners_2.jpg" alt="" width="">
+                </div></a> 
+                <a href="#"><div class="partners_image_2 partners_image_1">
+                    <img class="partners_image_1" src="./res/Partners_1.jpg" alt="">
+                </div></a> 
+                <a href="#"><div class="partners_image_3 partners_image_1">
+                    <img class="partners_image_1" src="./res/Partners_3.jpg" alt="">
+                </div></a> 
+                <a href="#"><div class="partners_image_4 partners_image_1">
+                    <img class="partners_image_1" src="./res/Partners_4.jpg" alt="">
+                </div></a> 
             </div>
             <div class="content_oycha">
-                <div class="partners_block">
+                <div class="partners_block content_partner_2">
                     <div class="left_block_partners left_block_partners_form">
                         <span class="title_form_partners">Application Form</span>
                         <p class="text_form_partners">Here you can keep track of your recent activity, request return authorizations for orders you have received, and view and edit your account information or list of favorite items.</p>
@@ -182,7 +190,7 @@
                 </div>
             </div>
             <div class="swiper mySwiper">
-                <div class="images_block swiper-wrapper">    
+                <div class="images-block-partners swiper-wrapper">    
                     <div class="swiper-slide slider_card">
                         <div class="vector_card_1">
 
@@ -270,7 +278,7 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="content_oycha content_partner">
+            <div class="content_oycha content_partner ">
                 <div class="title_text_block_oycha">
                     <h1 class="title_oycha title_partners_2">Ознакомиться c коммерческим предложением для HoReCa можно тут:</h1>
                     <a href="#" class="subtitle_oycha subtitle_partners_2">https://readymag.com/u1184976715/<br>oychapricehoreca/ </a>
@@ -294,10 +302,40 @@
                     <div class="subscription__caption-form">
                         <p class="subscription__caption-form-title">SIGN uP &amp; gET 10% oFF yOUR fIRST pURCHASE!</p>
                         <div class="subscription__caption-input">
-                            <input type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="Your E-mail:">
+                            <input class="sub-email" type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="Your E-mail:">
                             <button class="subscription__caption-btn">
-                                <p>subscribe</p>
+                                <p class="subscription__caption-btn-text">subscribe</p>
+                                    <div class="sub-arrow"></div>
                             </button>
+                            <div class="modal">
+                                <div class="modal-window">
+                                    <button class="btn-close-modal-window">
+                                        <div class="btn-close-modal"></div>
+                                    </button>
+                                    <div class="logo-modal-window">
+                                        <div class="logo-3-modal"></div>
+                                    </div>
+                                    <p class="h-7 title-modal-window">Thank you for being with us! welcome to the OYACHA team</p>
+                                    <p class="body-3 subtitle-modal-window">We sent you a discount coupon by email, now you can also follow our news</p>
+                                    <button class="btn load-more-products-shop btn-try-again">
+                                        Close
+                                    </button>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="modal modal-2">
+                                <div class="modal-window-2">
+                                    <button class="btn-close-modal-window btn-close-modal-window-2">
+                                        <div class="btn-close-modal btn-close-modal-2"></div>
+                                    </button>
+                                    <p class="h-7 title-modal-window">oops! something is wrong ...</p>
+                                    <p class="body-3 subtitle-modal-window">Please check that your email is correct</p>
+                                    <button class="btn btn-try-again load-more-products-shop">
+                                        Try again
+                                    </button>
+                                </div>
+                                <div class="overlay"></div>
+                            </div>
                             <p class="subscription__caption-form-subtitle">Free tasting at your establishment or sending samples of samples by Nova Poshta.</p>
                         </div>
                 
@@ -308,5 +346,6 @@
     </main>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/partners.js"></script>
+    <script src="js/modal-windows.js"></script>
 </body>
 </html>

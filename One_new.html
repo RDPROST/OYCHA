@@ -102,6 +102,10 @@
     <div></div></div>
     <div class="image_head_oycha">
         <img class="img_head_oycha img_head_new" src="res/One_new.jpg" alt="">
+        <div class="date_content_new-mobile">
+            <span class="number_date">31</span>
+            <span class="month_date">Feb</span>
+        </div>
     </div>
     <main class="oycha">
         <section class="oycha_section">
@@ -164,16 +168,47 @@
                 <div class="subscription__caption-form">
                     <p class="subscription__caption-form-title">SIGN uP &amp; gET 10% oFF yOUR fIRST pURCHASE!</p>
                     <div class="subscription__caption-input">
-                        <input type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="Your E-mail:">
+                        <input class="sub-email" type="email" id="email" pattern=".+@globex\.com" size="30" required="" placeholder="Your E-mail:">
                         <button class="subscription__caption-btn">
-                            <p>subscribe</p>
+                            <p class="subscription__caption-btn-text">subscribe</p>
+                                <div class="sub-arrow"></div>
                         </button>
+                        <div class="modal">
+                            <div class="modal-window">
+                                <button class="btn-close-modal-window">
+                                    <div class="btn-close-modal"></div>
+                                </button>
+                                <div class="logo-modal-window">
+                                    <div class="logo-3-modal"></div>
+                                </div>
+                                <p class="h-7 title-modal-window">Thank you for being with us! welcome to the OYACHA team</p>
+                                <p class="body-3 subtitle-modal-window">We sent you a discount coupon by email, now you can also follow our news</p>
+                                <button class="btn load-more-products-shop btn-try-again">
+                                    Close
+                                </button>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="modal modal-2">
+                            <div class="modal-window-2">
+                                <button class="btn-close-modal-window btn-close-modal-window-2">
+                                    <div class="btn-close-modal btn-close-modal-2"></div>
+                                </button>
+                                <p class="h-7 title-modal-window">oops! something is wrong ...</p>
+                                <p class="body-3 subtitle-modal-window">Please check that your email is correct</p>
+                                <button class="btn btn-try-again load-more-products-shop">
+                                    Try again
+                                </button>
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
                         <p class="subscription__caption-form-subtitle">Free tasting at your establishment or sending samples of samples by Nova Poshta.</p>
                     </div>
             
             </div>
             </div>
-            </div>
+        </div>
     </main>
+    <script src="js/modal-windows.js"></script>
 </body>
 </html>

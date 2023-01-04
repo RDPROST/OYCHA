@@ -4,7 +4,7 @@ let num = document.querySelectorAll('.number');
 let price = document.querySelectorAll('.total-price-to-cart');
 let finaly_price = document.querySelector('.price-head-cart');
 let finaly_price_mini = document.querySelector('.total-price-check');
-
+let checkoutMobile = document.querySelector('.checkout-mobile');
 let btn_close = document.querySelectorAll('.close-cart-product');
 let cart = document.querySelectorAll('.cart-product');
 let empty = document.querySelector('.empty-block');
@@ -74,8 +74,10 @@ for(let i = 0; i < btn_close.length; i++){
         finaly_price.innerHTML ="$" + balance;
         finaly_price_mini.innerHTML ="$" + balance;
         console.log(count);
-        if(count == 0)
+        if(count == 0){
             empty.classList.toggle("empty-block-active");
+            checkoutMobile.classList.toggle("checkout-mobile-empty");
+        }
     })
 }
 

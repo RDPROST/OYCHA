@@ -1,10 +1,10 @@
-let acc = document.querySelectorAll(".add_address");
-let btn = document.querySelectorAll(".link_add_address");
-      let i;
+let accProfile = document.querySelectorAll(".add_address");
+let btnProfile = document.querySelectorAll(".link_add_address");
 
-      for (i = 0; i < acc.length; i++) {
-        let elem = acc[i];
-        btn[i].addEventListener("click", function() {
+
+      for (let i = 0; i < accProfile.length; i++) {
+        let elem = accProfile[i];
+        btnProfile[i].addEventListener("click", function() {
           elem.classList.toggle("faq__item_active");
           let panel = elem.querySelector(".address__panel");
           if (panel.style.maxHeight){
@@ -14,3 +14,5 @@ let btn = document.querySelectorAll(".link_add_address");
           }
         });
       }
+
+      
