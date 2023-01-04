@@ -5237,7 +5237,7 @@ opacity: 0.5;
   position: relative;
 }
 
-.sliderRange::before{
+.filter-price::before{
   content: '0$';
   font-weight: 500;
   font-size: 14px;
@@ -5248,7 +5248,7 @@ opacity: 0.5;
   top: 150%;
 }
 
-.sliderRange::after{
+.filter-price::after{
   content: '1000$';
   font-weight: 500;
   font-size: 14px;

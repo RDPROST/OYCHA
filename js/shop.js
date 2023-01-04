@@ -1,7 +1,8 @@
+
 let btn = document.querySelectorAll('.button-shop-img'),
     item = document.querySelectorAll('.shop-list-product-item');
 
-    let eSlider = document.querySelector("#myRange");
+   // let eSlider = document.querySelector("#myRange");
     let rangeNum = document.querySelector('.range-num');
     let number = document.querySelector('.number-range');
     let moodBlock = document.querySelectorAll('.mood-filter');
@@ -86,7 +87,7 @@ btnFilter.addEventListener('click', () =>{
     
     
 
-    
+ /*   
 eSlider.addEventListener('mousemove', ()=>{
     let x = eSlider.value;
     let level = (x/1000) * 100;
@@ -95,7 +96,7 @@ eSlider.addEventListener('mousemove', ()=>{
     rangeNum.style.display = 'block';
     rangeNum.style.left = (x/dist) + 'px';
     number.innerHTML = x + ' $';
-})
+})*/
 
 
 for(let i = 0; i < item.length; i++)
@@ -115,10 +116,17 @@ for(let i = 0; i < item.length; i++)
     var slider = document.getElementById('slider');
 
     noUiSlider.create(slider, {
-        start: [20, 80],
+        tooltips: true,
+        format: wNumb({
+            decimals: 1,
+            thousand: '.',
+            suffix: ' $'
+        }),     
+        start: [200, 800],
         connect: true,
         range: {
             'min': 0,
-            'max': 100
+            'max': 1000
         }
     });
+
