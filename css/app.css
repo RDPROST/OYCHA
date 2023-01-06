@@ -7414,6 +7414,12 @@ line-height: 141%;
 /* Main */
 
 @media screen and (max-width: 768px) {
+
+  .group-container{
+    min-width: 0!important;
+    flex-wrap: nowrap!important;
+  }
+
   .logotype-img{
     width: auto!important;
     height: 78px!important;
@@ -7619,6 +7625,10 @@ line-height: 141%;
 }
 
 @media screen and (max-width: 376px) {
+
+  .group-container{
+    min-width: 0!important;
+  }
   .logotype-img{
     width: auto!important;
     height: 78px!important;
@@ -7744,6 +7754,7 @@ line-height: 141%;
 
   .blog-block-section{
     width: 165px!important;
+    height: 265px!important;
   }
 
   .main-blocks-section{
@@ -8145,13 +8156,20 @@ line-height: 141%;
 }
 
 .big-block-section{
-  width: 682px;
+  min-width: 345px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-right: 196px;
   border: none;
   background: none;
+}
+
+.group-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  min-width: 700px;
 }
 
 .picture-plus-sticker{
@@ -8159,8 +8177,8 @@ line-height: 141%;
 }
 
 .big-block-img{
-  width: 682px;
-  height: 512px;
+  width: 100%;
+  height: auto;
 }
 
 .inner-block-info{
@@ -8213,12 +8231,14 @@ line-height: 141%;
 }
 
 .small-block-img{
-  width: 329px;
-  height: 422px;
+  width: 100%;
+  height: auto;
 }
 
 .small-block-section{
-  width: 329px;
+  width: 45%;
+  max-width: 329px;
+  min-width: 168px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -8229,19 +8249,22 @@ line-height: 141%;
 }
 
 .main-blocks-section{
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 100px;
 }
 
 .blog-section-img{
-  width: 329.86px;
-  height: 512px;
+  width: 100%;
+  height: auto;
 }
 
 .blog-block-section{
-  width: 329.86px;
+  width: 329px;
+  height: 512px;
   position: relative;
   border: none;
   background: none;
@@ -8280,13 +8303,14 @@ line-height: 141%;
 }
 
 .slim-block-section{
-  width: 329px;
-  margin: 0 22px;
+  width: 45%;
+  max-width: 329px;
+  min-width: 168px;
 }
 
 .slim-block-img{
-  width: 329px;
-  height: 512px;
+  width: 100%;
+  height: auto;
 }
 
 
